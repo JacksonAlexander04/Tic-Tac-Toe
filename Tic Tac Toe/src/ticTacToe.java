@@ -164,47 +164,7 @@ public class ticTacToe {
 			System.out.println("You win!");
 			System.exit(0);
 		}
-		else if(board[0][0].equals(playerSide) && board[1][1].equals(playerSide) && board[2][2].equals(playerSide)) {
-			System.out.println("You win!");
-			System.exit(0);
-		}
-		else if(board[0][2].equals(playerSide) && board[1][1].equals(playerSide) && board[2][0].equals(playerSide)) {
-			System.out.println("You win!");
-			System.exit(0);
-		}
-		else if(board[0][0].equals(computerSide) && board[1][1].equals(computerSide) && board[2][2].equals(computerSide)) {
-			System.out.println("You win!");
-			System.exit(0);
-		}
-		else if(board[0][2].equals(computerSide) && board[1][1].equals(computerSide) && board[2][0].equals(computerSide)) {
-			System.out.println("You win!");
-			System.exit(0);
-		}
-		else if(board[0][0].equals(computerSide) && board[1][0].equals(computerSide) && board[2][0].equals(computerSide)) {
-			System.out.println("You win!");
-			System.exit(0);
-		}
-		else if(board[0][1].equals(computerSide) && board[1][1].equals(computerSide) && board[2][1].equals(computerSide)) {
-			System.out.println("You win!");
-			System.exit(0);
-		}
-		else if(board[0][2].equals(computerSide) && board[1][2].equals(computerSide) && board[2][2].equals(computerSide)) {
-			System.out.println("You win!");
-			System.exit(0);
-		}
-		else if(board[0][0].equals(computerSide) && board[0][1].equals(computerSide) && board[0][2].equals(computerSide)) {
-			System.out.println("You win!");
-			System.exit(0);
-		}
-		else if(board[1][0].equals(computerSide) && board[1][1].equals(computerSide) && board[1][2].equals(computerSide)) {
-			System.out.println("You win!");
-			System.exit(0);
-		}
-		else if(board[2][0].equals(computerSide) && board[2][1].equals(computerSide) && board[2][2].equals(computerSide)) {
-			System.out.println("You win!");
-			System.exit(0);
-		}
-		else if(board[0][0].equals(computerSide) && board[1][0].equals(computerSide) && board[2][0].equals(computerSide)) {
+		else if(board[0][0].equals(playerSide) && board[1][0].equals(playerSide) && board[2][0].equals(playerSide)) {
 			System.out.println("You win!");
 			System.exit(0);
 		}
@@ -216,6 +176,51 @@ public class ticTacToe {
 			System.out.println("You win!");
 			System.exit(0);
 		}
+		else if(board[0][0].equals(playerSide) && board[1][1].equals(playerSide) && board[2][2].equals(playerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][2].equals(playerSide) && board[1][1].equals(playerSide) && board[2][0].equals(playerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][0].equals(computerSide) && board[1][1].equals(computerSide) && board[2][2].equals(computerSide)) {
+			System.out.println("You lose!");
+			System.exit(0);
+		}
+		else if(board[0][2].equals(computerSide) && board[1][1].equals(computerSide) && board[2][0].equals(computerSide)) {
+			System.out.println("You lose!");
+			System.exit(0);
+		}
+		else if(board[0][0].equals(computerSide) && board[1][0].equals(computerSide) && board[2][0].equals(computerSide)) {
+			System.out.println("You lose!");
+			System.exit(0);
+		}
+		else if(board[0][1].equals(computerSide) && board[1][1].equals(computerSide) && board[2][1].equals(computerSide)) {
+			System.out.println("You lose!");
+			System.exit(0);
+		}
+		else if(board[0][2].equals(computerSide) && board[1][2].equals(computerSide) && board[2][2].equals(computerSide)) {
+			System.out.println("You lose!");
+			System.exit(0);
+		}
+		else if(board[0][0].equals(computerSide) && board[0][1].equals(computerSide) && board[0][2].equals(computerSide)) {
+			System.out.println("You lose!");
+			System.exit(0);
+		}
+		else if(board[1][0].equals(computerSide) && board[1][1].equals(computerSide) && board[1][2].equals(computerSide)) {
+			System.out.println("You lose!");
+			System.exit(0);
+		}
+		else if(board[2][0].equals(computerSide) && board[2][1].equals(computerSide) && board[2][2].equals(computerSide)) {
+			System.out.println("You lose!");
+			System.exit(0);
+		}
+		else if(board[0][0].equals(computerSide) && board[1][0].equals(computerSide) && board[2][0].equals(computerSide)) {
+			System.out.println("You lose!");
+			System.exit(0);
+		}
+		
 		
 	}
 		
