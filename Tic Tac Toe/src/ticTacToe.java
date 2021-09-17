@@ -12,19 +12,13 @@ public class ticTacToe {
 		prepareBoard();
 		displayBoard();
 		userXorOChoice();
+		for(int i = 0; i < 4; i++) {
 		playerTurns();
 		displayBoard();
 		ComputerTurn();
 		displayBoard();
-		playerTurns();
-		displayBoard();
-		ComputerTurn();
-		displayBoard();
-		playerTurns();
-		displayBoard();
-		ComputerTurn();
-		displayBoard();
-		playerTurns();
+		}
+		
 		
 	}
 
@@ -142,10 +136,13 @@ public class ticTacToe {
 		randomNumberRow = (int) (Math.random() * 3 );
 		randomNumberCol = (int) (Math.random() * 3 );
 		//System.out.println(randomNumberRow + " " + randomNumberCol);
-		if(board[randomNumberRow][ran])
+		if(board[randomNumberRow][randomNumberCol].equals(" ")) {
 		board[randomNumberRow][randomNumberCol] = computerSide;
 		
-		
+		}
+		else {
+			ComputerTurn();
+		}
 		
 		
 	}
