@@ -15,10 +15,14 @@ public class ticTacToe {
 		for(int i = 0; i < 4; i++) {
 		playerTurns();
 		displayBoard();
+		checkForWin();
 		ComputerTurn();
 		displayBoard();
+		checkForWin();
 		}
-		System.out.println(" ");
+		playerTurns();
+		displayBoard();
+		System.out.println("You tied with the computer.");
 		
 		
 	}
@@ -134,9 +138,9 @@ public class ticTacToe {
 
 
 	public static void ComputerTurn() {
+
 		randomNumberRow = (int) (Math.random() * 3 );
 		randomNumberCol = (int) (Math.random() * 3 );
-		//System.out.println(randomNumberRow + " " + randomNumberCol);
 		if(board[randomNumberRow][randomNumberCol].equals(" ")) {
 		board[randomNumberRow][randomNumberCol] = computerSide;
 		
@@ -145,6 +149,73 @@ public class ticTacToe {
 			ComputerTurn();
 		}
 		
+		
+	}
+	public static void checkForWin() {
+		if(board[0][0].equals(playerSide) && board[0][1].equals(playerSide) && board[0][2].equals(playerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[1][0].equals(playerSide) && board[1][1].equals(playerSide) && board[1][2].equals(playerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[2][0].equals(playerSide) && board[2][1].equals(playerSide) && board[2][2].equals(playerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][0].equals(playerSide) && board[1][1].equals(playerSide) && board[2][2].equals(playerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][2].equals(playerSide) && board[1][1].equals(playerSide) && board[2][0].equals(playerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][0].equals(computerSide) && board[1][1].equals(computerSide) && board[2][2].equals(computerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][2].equals(computerSide) && board[1][1].equals(computerSide) && board[2][0].equals(computerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][0].equals(computerSide) && board[1][0].equals(computerSide) && board[2][0].equals(computerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][1].equals(computerSide) && board[1][1].equals(computerSide) && board[2][1].equals(computerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][2].equals(computerSide) && board[1][2].equals(computerSide) && board[2][2].equals(computerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][0].equals(computerSide) && board[0][1].equals(computerSide) && board[0][2].equals(computerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[1][0].equals(computerSide) && board[1][1].equals(computerSide) && board[1][2].equals(computerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[2][0].equals(computerSide) && board[2][1].equals(computerSide) && board[2][2].equals(computerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][0].equals(computerSide) && board[1][0].equals(computerSide) && board[2][0].equals(computerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][1].equals(playerSide) && board[1][1].equals(playerSide) && board[2][1].equals(playerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
+		else if(board[0][2].equals(playerSide) && board[1][2].equals(playerSide) && board[2][2].equals(playerSide)) {
+			System.out.println("You win!");
+			System.exit(0);
+		}
 		
 	}
 		
