@@ -18,7 +18,7 @@ public class ticTacToe {
 		ComputerTurn();
 		displayBoard();
 		}
-		
+		System.out.println(" ");
 		
 		
 	}
